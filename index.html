@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cricket Score Counter</title>
+        <meta name="theme-color" content="red">
+        <meta name="author" content="vrajesh vadhavana">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="This web-application has been developed for the purpose of automatic cricket score counting">
+        <meta name="keyword" content="live cricket score counting,cricket score counter,live score counter,live score counting,cricket,score">
+        <link rel="stylesheet" type="text/css" href="Cricket Score Counter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+        <meta name="msapplication-navbutton-color" content="red">
+    </head>
+    <body>
+         <header>
+                <div class="display">
+                    <div class="dcell1">
+                        <h1 id="total">0</h1>
+                        <h1 id="backslash">/</h1>
+                        <h1 id="wicket">0</h1>
+                    </div>
+                    <div class="dcell2">
+                        <h1>Runs to win : <span id="runs"></span></h1>
+                    </div>
+                    <div class="dcell1">
+                        <h1 id="over">0</h1>
+                        <h1 id="point">&bull;</h1>
+                        <h1 id="ball">0</h1>
+                    </div>
+                </div>        
+            </header>
+            <main>
+                <div class="btn btn1">
+                    <div class="button" onclick="ball(),ext(),target(),btn1()">0</div>    
+                    <div class="button" onclick="one(),ball(),ext(),target(),btn1()">1</div>
+                    <div class="button" onclick="two(),ball(),ext(),target(),btn1()">2</div>
+                    <div class="button" onclick="three(),ball(),ext(),target(),btn1()">3</div>
+                </div>
+                <div class="btn btn2">   
+                    <div class="button" onclick="four(),ball(),ext(),target(),btn1()">4</div>
+                    <div class="button" onclick="five(),ball(),ext(),target(),btn1()">5</div>
+                    <div class="button" onclick="six(),ball(),ext(),target(),btn1()">6</div>
+                    <div class="button" onclick="wicket(),ball(),ext(),target(),btn1()" id="w">w</div>                
+                </div>
+                <div class="btn btn3">
+                    <div class="button wideball" onclick="one(),ext(),target(),btn()">Wide ball</div>
+                    <div class="button wideball" onclick="refresh()">Reset</div>
+                    <button class="button wideball" onclick="back(),bac(),wic(),targ(),btn()" id="back">&#8617;</button>
+                    <div class="button" id="extra">
+                        <div class="button" onclick="one(),ext(),target(),btn1(),add()">+1</div>         
+                        <div onclick="two(),ext(),target(),btn()">+2</div>
+                        <div onclick="three(),ext(),target(),btn()">+3</div>
+                        <div onclick="four(),ext(),target(),btn()">+4</div>
+                        <div onclick="six(),ext(),target(),btn()" class="mrg">+6</div>
+                        <div id="noball" onclick="one(),ext(),target(),btn()" class="mrg">No ball</div>
+                    </div>
+                </div>
+            </main>
+            <section class="input">
+                <div>
+                    <h1>1's</h1>
+                    <h1>:</h1>
+                    <h1 id="single">0</h1>
+                </div>
+                <div>      
+                    <h1>2's</h1>
+                    <h1>:</h1>
+                    <h1 id="double">0</h1>
+            </div>
+                <input type="number" placeholder="Set target"autofocus id="target">
+                <div>
+                    <h1>4's</h1>
+                    <h1>:</h1>
+                    <h1 id="four">0</h1>
+                </div>
+                <div>       
+                    <h1>6's</h1>
+                    <h1>:</h1>
+                    <h1 id="six">0</h1>
+                </div>
+            </section>
+            <footer>
+                <p>Developed by vrajesh vadhavana</p>
+            </footer>
+            <script src="cricket score counter.js"></script>
+    </body>
+</html>

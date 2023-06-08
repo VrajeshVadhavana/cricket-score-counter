@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: space-between;
+    background-color: #f0f0f3;
+}
+header{
+    width: 100%;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    padding: 1vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.display{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    background: #f0f0f3;
+    border-radius:0px 0px 50px 50px;
+    box-shadow:  0px 10px 10px #aeaec0;
+}
+.display .dcell1{
+    width: 20%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    border-radius: 60px;
+}
+.dcell1 h1{
+    margin: 0 1.3vh;
+    font-size: 3vw;
+    align-self: flex-end;
+    font-family: lato,sans-serif;
+}
+.dcell1 #backslash{
+    align-self: flex-end;
+    font-weight: 100;
+}
+.dcell1 #wicket{
+    align-self:flex-end;
+    font-size: 2vw;
+    color: red;
+}
+.dcell1 #over{
+    align-self: flex-end;
+    font-size: 2vw;
+    color: black;
+}
+.dcell1 #point{
+    align-self: flex-end;
+    font-size: 1.2vw;
+}
+.dcell2 h1{
+    font-size: 1.8vw;
+    font-family: lato,sans-serif;
+    align-self:center;
+}
+.display .dcell2{
+    border-radius: 60px;
+    box-shadow:  -5px -5px 10px #FFFFFF,
+    5px 5px 5px #aeaec0;
+    width: 26vw;
+    margin: 1.5vh 0;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:center;
+}
+main{
+    width: 100vw;
+    height: 72vh;
+    display: flex;
+    flex-flow: wrap row;
+    box-shadow: 0px 6px 6px #aeaec0;
+    align-content: space-around;
+}
+main .btn{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+}
+.btn .button{
+    width: 12vw;
+    padding: 5vh 0;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: lato, sans-serif;
+    font-size: 2vw;
+    border-radius: 0px;
+    background: #f0f0f3;
+    box-shadow:  -10px -10px 28px #FFFFFF,
+                 10px 10px 18px #aeaec0;
+    align-self: center;
+}
+.btn .button:hover{
+     box-shadow: inset -10px -10px 10px #FFFFFF,
+    inset 10px 10px 10px 0 #aeaec0;
+}
+#extra{
+    box-shadow: 0px 0px 0px white;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 0;
+}
+.mrg{
+    margin-top: 4vh;
+}
+#back{
+    font-size: 2vw;
+    border: 0px;
+    padding: 4vh 0;     
+}
+#w{
+    color: red;
+}
+#extra>div{
+    font-size: 1.2vw;
+    width: 21%;
+    padding: 0.8vh 0;
+    background-color: #f0f0f3;
+    box-shadow:  -6px -6px 20px #FFFFFF,
+        6px 6px 12px #aeaec0;
+    border-radius: 5px;
+  }
+#extra>div:hover{
+    box-shadow: inset -10px -10px 10px #FFFFFF,
+    inset 10px 10px 10px 0 #aeaec0;
+}
+#extra #noball{
+    margin-bottom: 0vh;
+    width: 71%;
+}
+.btn3 .wideball{
+    font-size: 1.5vw;
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+}
+.input input{
+    width: 12%;
+    padding: 1vh 2vh;
+    font-family: lato, sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    background-color: #f0f0f3;
+    box-shadow: inset -10px -10px 10px #FFFFFF,
+    inset 10px 10px 10px 0 #aeaec0;
+    border-radius: 60px;
+    border: 0px;
+}
+.input div{
+    display: flex;
+    flex-flow: wrap row;
+    width: 8%;
+    justify-content: center;
+    border-radius: 60px;
+    background-color: #f0f0f3;
+    box-shadow:  -5px -5px 15px #FFFFFF,
+    5px 5px 10px #aeaec0;
+ }
+.input div h1{
+    font-family:lato, sans-serif;
+    font-size: 1.4vw;
+    align-self: center;
+    margin: 0 0.4vw;
+}
+.input input:focus{
+    outline:none;
+    color: black;
+}
+footer{
+    width: 100%;
+    border-radius: 60px 60px 0px 0px;
+    box-shadow: -0px -6px 6px #aeaec0;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    font-family:lato, sans-serif;
+}
+@media screen and (max-width:1100px){
+    .btn .button{
+        width: 16%;
+        font-size: 2.4vw;
+    }
+    .dcell1 #wicket{
+        font-size: 2.8vw;
+    }
+    .dcell1 #over{
+        font-size: 2.8vw;
+    }
+    .dcell1 #point{
+        font-size: 1.8vw;
+    }
+    .dcell1 h1{
+        font-size: 4vw;
+    }
+    .display .dcell2{
+        width: 35%;
+    }
+    .dcell2 h1{
+        font-size: 2.4vw;
+    }
+    .btn3 .wideball{
+        font-size: 2vw;
+    }
+    #extra>div{
+        font-size: 1.7vw;
+    }
+    #back{
+        font-size: 3vw;
+    }
+    .input input{
+        width: 14%;
+        font-size: 1.8vw;
+    }
+    .input div{
+        width: 10%;
+    }
+    .input div h1{
+        font-size: 2vw;
+    }
+    footer p{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width:800px){
+    .dcell1 h1{
+        font-size: 5vw;
+    }
+    .dcell1 #wicket{
+        font-size: 3.8vw;
+    }
+    .display .dcell2{
+        width: 36%;
+    }
+    .dcell1 #over{
+        font-size: 3.8vw;
+    }
+    .btn .button{
+        font-size: 3.5vw;
+        width: 18%;
+    }
+    .btn .wideball{
+        font-size: 2.8vw;
+    }
+    #back{
+        font-size: 4vw;
+    }
+    #extra>div{
+        width: 21%;
+        font-size: 2.4vw;
+    }
+    .input div{
+        width: 14%;
+    }
+    .input div h1{
+        font-size: 2.8vw;
+        margin: 0 0.6vw;
+    }
+    .input input{
+        width: 18%;
+        font-size: 2.4vw;
+    }
+    footer p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:645px){
+    .btn .button{
+        width: 20%;
+        padding: 4vh 0;
+        font-size: 4vw;
+    }
+    .btn .wideball{
+        font-size: 3.3vw;
+    }
+    .dcell1 h1{
+        margin: 0 0.8vh;
+        font-size: 6vw;
+    }
+    .dcell1 #wicket{
+        font-size: 4vw;
+    }
+    .display .dcell1{
+        width: 26%;
+    }
+    .dcell1 #over{
+        font-size: 4vw;
+    }
+    .display .dcell2{
+        width: 40%;
+    }
+    .dcell2 h1{
+        font-size: 3vw;
+    }
+    #extra>div{
+        width: 21%;
+        font-size: 2.5vw;
+    }
+    .btn .mrg{
+        margin-top: 2vh;
+    }
+    #back{
+        padding: 3.2vh 0;
+        font-size: 4vw;
+    }
+    .input input{
+        width: 22%;
+        font-size: 3vw;
+    }
+    .input div h1{
+        font-size: 3.2vw;
+    }
+    footer p{
+        font-size: 2.4vw;
+    }
+}
+@media screen and (max-width:570px){
+    .display{
+        border-radius: 0px;
+    }
+    .dcell2 h1{
+        font-size: 3.8vw;
+    }
+    .dcell1 #point{
+        font-size: 3vw;
+    }
+    .display .dcell2{
+        width: 45%;
+    }
+    .btn .button{
+        width: 18%;
+        font-size: 4vw;
+    }
+    .btn .wideball{
+        width: 26%;
+        font-size: 3.5vw;
+    }
+    #extra{
+        margin: 5vh 0 0;
+        width: 89%;
+    }
+    #extra>div{
+        font-size: 3.4vw;
+        padding: 2vh 0;
+    }
+    .button .mrg{
+        margin-top: 3.8vh;
+        margin-bottom: 1vh;
+    }
+    #back{
+        padding: 3vh 0;
+    }
+   #extra #noball{
+        width: 74%;
+        margin-bottom: 1vh;
+    }
+    main{
+        width: 100vw;
+        height: 75vh;
+    }    
+}
+@media screen and (max-width:490px){
+    main{
+        height: 75vh;
+    }
+    .btn .button{
+        padding: 3vh 0;
+        font-size: 6vw;
+    }
+    .btn .wideball{
+        font-size: 4.5vw;
+        padding: 4vh 0;
+    }
+    .input #target{
+        font-size: 3.5vw;
+    }
+    .dcell1{
+        align-self: center;
+    }
+    .dcell1 h1{
+        margin: 0 0.8vw;
+        font-size: 7vw;
+        align-self: center;
+    }
+    .dcell1 #over{
+        font-size: 5vw;
+    }
+    .display .dcell2{
+        width: 48%;
+    }
+    .dcell2 h1{
+        font-size: 4.3vw;
+    }
+    .dcell1 #point{
+        font-size: 2.5vw;
+    }
+    .dcell1 #wicket{
+        font-size: 7vw;
+    }
+    .dcell1 #backslash{
+        align-self: center;
+    }
+    .input input{
+        box-shadow: inset -10px -10px 10px #FFFFFF,
+        inset 7px 7px 12px #aeaec0;
+    }
+    .input div{
+        width: 16%;
+    }
+    .input div h1{
+        font-size: 4vw;
+    }
+    #target{
+        font-size: 3vw;
+    }
+    #extra{
+        margin-top: 5.4vh;
+    }
+    #extra>div{
+        font-size: 4.5vw;
+    }
+    footer p{
+        font-size: 3vw;
+    }
+    .button .mrg{
+        margin-top: 5.4vh;
+        margin-bottom: 1vh;
+    }
+    #back {
+        padding: 2.5vh 0;
+        font-size: 7vw;
+    }
+   #extra #noball{
+        width: 74%;
+        margin-bottom: 1vh;
+    }
+}
